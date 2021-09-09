@@ -1,0 +1,83 @@
+body {
+  font-family: modesto-poster, serif;
+  font-weight: 400;
+  font-style: normal;
+  @apply text-white bg-black;
+}
+main.wrapper {
+  @apply w-full min-h-screen bg-black grid grid-cols-1 md:grid-cols-2 overflow-hidden;
+}
+.campaign {
+  background-image: url("/cerveza/images/bg_agreste.jpg");
+  background-size: 100% 100%;
+  @apply bg-ag_bg bg-no-repeat bg-center flex items-center justify-center md:min-h-screen h-auto min-h-0;
+}
+.campaign_wrapper {
+  @apply lg:w-10/12 md:w-10/12 md:max-w-md md:h-auto mx-auto h-auto w-8/12 my-auto pb-8;
+}
+.campaign_wrapper img {
+  @apply w-full;
+}
+.campaign_wrapper p {
+  @apply md:text-xs text-center text-ag_brown;
+}
+.form {
+  @apply flex items-start justify-center md:min-h-screen h-4/6 min-h-0 bg-ag_form;
+}
+.form_wrapper {
+  @apply w-full;
+}
+.form_top {
+  background-image: url("/cerveza/images/fondo_logo.jpg");
+  background-size: 100% 100%;
+  @apply px-16 pt-8 pb-16 bg-ag_form;
+}
+.form_top img {
+}
+.form_inter {
+  @apply p-6 bg-ag_form;
+}
+.form_inter form {
+  background-image: url("/cerveza/images/fondo_form.jpg");
+  background-size: 100% 100%;
+  @apply md:px-16 px-8 pt-8 pb-16  flex-col space-y-8 mt-4;
+}
+.form_element {
+  @apply w-full;
+}
+.form_element label {
+  @apply text-center block text-center mb-3 text-2xl text-ag_red;
+}
+.form_element input {
+  @apply py-3 px-3 w-full bg-white border-ag_bg text-ag_bg border rounded-lg text-lg text-center;
+}
+.form_inter button {
+  @apply py-3 px-3 w-full bg-ag_red border-ag_red text-white border rounded-lg text-2xl text-center;
+}
+.terminos_condiciones {
+  @apply text-center text-ag_bg px-4 md:text-sm;
+}
+.terminos_condiciones a {
+  @apply text-ag_red;
+}
+.redes {
+  @apply text-2xl text-center mt-4 mb-2;
+}
+.redes a {
+  @apply text-ag_bg;
+}
+.error {
+  @apply text-ag_bg  md:text-lg mt-1 ml-1 text-center;
+}
+.mensaje {
+  @apply text-center p-11 text-ag_bg;
+}
+.mensaje p {
+  @apply text-5xl;
+}
+.mensaje a {
+  @apply text-3xl block mt-8 text-ag_red;
+}
+.error_msg {
+  @apply text-center text-2xl text-ag_red;
+}
