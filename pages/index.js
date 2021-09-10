@@ -158,17 +158,28 @@ function Home({ props }) {
                 <button type="submit">Quiero mi alineacion</button>
                 <p className="terminos_condiciones">
                   Activando el botón aceptas nuestros{" "}
-                  <a href="https://agreste.com.co/politica-de-autorizacion-y-a-de-datos/" target="_blank">términos y condiciones</a>
+                  <a
+                    href="https://agreste.com.co/politica-de-autorizacion-y-a-de-datos/"
+                    target="_blank"
+                  >
+                    términos y condiciones
+                  </a>
                 </p>
               </form>
               <div className={"mensaje " + (resultado ? "block" : "hidden")}>
-                <p>¡Tus datos fueron registrados con éxito!</p>
-                <a href="#" onClick={() => setResultado(false)}>
+                <p>
+                  ¡Listo! uno de nuestros asesores te contactara próximamente
+                  para agendar tu cita.
+                </p>
+                {/* <a href="#" onClick={() => setResultado(false)}>
                   Escríbenos
-                </a>
+                </a> */}
               </div>
               <div className="redes">
-                <a href="https://www.instagram.com/agreste.garage/" target="_blank">
+                <a
+                  href="https://www.instagram.com/agreste.garage/"
+                  target="_blank"
+                >
                   @agreste.garage
                 </a>
               </div>
@@ -183,7 +194,7 @@ function Home({ props }) {
 // PROPS
 
 // Home.getInitialProps = async (ctx) => {
-  
+
 // };
 
 export default Home;
